@@ -12,7 +12,7 @@ dret <- read_sas("C:/Users/Davis/OneDrive/Desktop/dret1519.sas7bdat") %>%
     PRC = abs(PRC)
   )
 
-ff <- read.csv("~/Desktop/ffd2619.CSV") %>%
+ff <- read.csv("C:/Users/Davis/OneDrive/Desktop/ffd2619.CSV") %>%
   mutate(
     year = floor(date/10000),
     month = floor((date - year*10000)/100),
