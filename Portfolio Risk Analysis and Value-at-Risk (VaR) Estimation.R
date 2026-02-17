@@ -5,7 +5,7 @@ library(PerformanceAnalytics)
 library(ggplot2)
 
 ## read in data
-dret <- read_sas("~/Desktop/dret1519.sas7bdat") %>%
+dret <- read_sas("C:/Users/Davis/OneDrive/Desktop/dret1519.sas7bdat") %>%
   filter(SHRCD %in% c(10, 11)) %>%
   mutate(
     DATE = as.Date(DATE),
